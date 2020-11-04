@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 
 node_js:
   - 12
@@ -7,11 +9,10 @@ before_script:
   - yarn install
 
 cache: yarn
-
+branches:
+  only: main
 jobs:
   include:
-    - name: "Deploy to Chromatic"
-      fork=false # forks dont build
-      #script: yarn chromatic --project-token=84svyadsh4w
-      if: (type = push AND branch = main)
-      script: yarn chromatic --project-token=84svyadsh4w
+   - name: 'Chromatic Deployment'
+     if: (type=push AND branch= main AND fork=false)
+     script: yarn chromatic --project-token=84svyadsh4w 
