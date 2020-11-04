@@ -11,4 +11,7 @@ cache: yarn
 jobs:
   include:
     - name: "Deploy to Chromatic"
+      fork=false # forks dont build
+      #script: yarn chromatic --project-token=84svyadsh4w
+      if: (type = push AND branch = main)
       script: yarn chromatic --project-token=84svyadsh4w
