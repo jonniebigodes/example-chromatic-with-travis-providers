@@ -14,5 +14,5 @@ branches:
 jobs:
   include:
    - name: 'Chromatic Deployment'
-     if: (type=push AND branch= main AND fork=false)
+     if: (type = push AND branch = main AND fork = false)
      script: yarn chromatic --project-token=84svyadsh4w --exit-zero-on-changes
