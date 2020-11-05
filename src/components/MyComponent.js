@@ -10,7 +10,7 @@ const MyComponent = ({ itemOne,itemTwo}) => {
       <h3>This is the value of propertyB</h3>
       { itemTwo }
       <h3>
-        test with travis build
+        test with travis build on the example branch
       </h3>
     </>
   );
