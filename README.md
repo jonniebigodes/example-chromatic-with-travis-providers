@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/jonniebigodes/example-chromatic-with-travis-providers.svg?branch=main)](https://travis-ci.org/jonniebigodes/example-chromatic-with-travis-providers
+![Build Status](https://travis-ci.org/jonniebigodes/example-chromatic-with-travis-providers.svg?branch=main)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
