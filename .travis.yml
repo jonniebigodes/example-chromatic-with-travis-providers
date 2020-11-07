@@ -14,7 +14,7 @@ branches:
 jobs:
   include:
    - name: 'Chromatic Deployment'
-     #if: (type = push OR TRAVIS_PULL_REQUEST_SLUG != TRAVIS_REPO_SLUG )
-     if: (type = push OR ${TRAVIS_PULL_REQUEST_SLUG} != ${TRAVIS_REPO_SLUG })
+     # see conditions https://docs.travis-ci.com/user/conditions-v1
+     if: (type = push OR head_repo != repo )
      #script: yarn chromatic --project-token=84svyadsh4w --exit-zero-on-changes
      script: yarn chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --exit-zero-on-changes
