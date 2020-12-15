@@ -13,7 +13,7 @@ branches:
   only: main
 jobs:
   include:
-   - name: 'Chromatic Deployment'
+   - name: 'Publish to Chromatic'
      # see conditions https://docs.travis-ci.com/user/conditions-v1
      if: (type = push OR head_repo != repo )
      #script: yarn chromatic --project-token=84svyadsh4w --exit-zero-on-changes
